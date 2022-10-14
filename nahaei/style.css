@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* || Fonts */
+@font-face {
+  font-family: "Calibri";
+  src: url("./fonts/Calibri-Win10/calibri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("./fonts/Calibri-Win10/calibrib.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* || General Styles */
+
+:root {
+  --black-color: #8dc155;
+}
+
+body {
+  font-family: "Calibri";
+  direction: rtl;
+  margin:0;
+}
+
+.heroView {
+  min-height: 100vh;
+  background-image: url(./images/background.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.flexRowContainer {
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items {
+  padding: 15px;
+  background-color: whitesmoke;
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: 5px 5px 3px #888888;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.items:hover {
+    background-color: white;
+}
+
+
+.nonStyledLinks {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+/* || */
+
+h1 {
+  color: --black-color;
+  font-size: 30pt;
+}
+
+
